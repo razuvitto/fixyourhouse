@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Piccolo Theme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/custom-styles.css">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]--> 
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script type="text/javascript">
+     $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+</script>
+
+</head>
+
+<body>
+	<div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container main-container">
+    
+      <div class="row header"><!-- Begin Header -->
+      
+        <!-- Logo
+        ================================================== -->
+        <div class="span5 logo">
+        	<a href="index.htm"><img src="img/piccolo-logo.png" alt="" /></a>
+            <h5>Big Things... Small Packages</h5>
+        </div>
+        
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span7 navigation">
+            <div class="navbar hidden-phone">
+            
+            <ul class="nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="index.htm">Home <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.htm">Full Page</a></li>
+                    <li><a href="index-gallery.htm">Gallery Only</a></li>
+                    <li><a href="index-slider.htm">Slider Only</a></li>
+                </ul>
+            </li>
+           <li class="active"><a href="features.htm">Features</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">Pages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="page-full-width.htm">Full Width</a></li>
+                    <li><a href="page-right-sidebar.htm">Right Sidebar</a></li>
+                    <li><a href="page-left-sidebar.htm">Left Sidebar</a></li>
+                    <li><a href="page-double-sidebar.htm">Double Sidebar</a></li>
+                </ul>
+            </li>
+             <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="gallery-4col.htm">Gallery <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="gallery-3col.htm">Gallery 3 Column</a></li>
+                    <li><a href="gallery-4col.htm">Gallery 4 Column</a></li>
+                    <li><a href="gallery-6col.htm">Gallery 6 Column</a></li>
+                    <li><a href="gallery-4col-circle.htm">Gallery 4 Round</a></li>
+                    <li><a href="gallery-single.htm">Gallery Single</a></li>
+                </ul>
+             </li>
+             <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="blog-style1.htm">Blog <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="blog-style1.htm">Blog Style 1</a></li>
+                    <li><a href="blog-style2.htm">Blog Style 2</a></li>
+                    <li><a href="blog-style3.htm">Blog Style 3</a></li>
+                    <li><a href="blog-style4.htm">Blog Style 4</a></li>
+                    <li><a href="blog-single.htm">Blog Single</a></li>
+                </ul>
+             </li>
+             <li><a href="page-contact.htm">Contact</a></li>
+            </ul>
+           
+            </div>
+
+             <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+                <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Navigate...</option>
+                    <option value="index.htm">Home</option>
+                        <option value="index.htm">- Full Page</option>
+                        <option value="index-gallery.htm">- Gallery Only</option>
+                        <option value="index-slider.htm">- Slider Only</option>
+                    <option value="features.htm">Features</option>
+                    <option value="page-full-width.htm">Pages</option>
+                        <option value="page-full-width.htm">- Full Width</option>
+                        <option value="page-right-sidebar.htm">- Right Sidebar</option>
+                        <option value="page-left-sidebar.htm">- Left Sidebar</option>
+                        <option value="page-double-sidebar.htm">- Double Sidebar</option>
+                    <option value="gallery-4col.htm">Gallery</option>
+                        <option value="gallery-3col.htm">- 3 Column</option>
+                        <option value="gallery-4col.htm">- 4 Column</option>
+                        <option value="gallery-6col.htm">- 6 Column</option>
+                        <option value="gallery-4col-circle.htm">- Gallery 4 Col Round</option>
+                        <option value="gallery-single.htm">- Gallery Single</option>
+                    <option value="blog-style1.htm">Blog</option>
+                        <option value="blog-style1.htm">- Blog Style 1</option>
+                        <option value="blog-style2.htm">- Blog Style 2</option>
+                        <option value="blog-style3.htm">- Blog Style 3</option>
+                        <option value="blog-style4.htm">- Blog Style 4</option>
+                        <option value="blog-single.htm">- Blog Single</option>
+                    <option value="page-contact.htm">Contact</option>
+                </select>
+                </div>
+                </form>
+            
+        </div>
+        
+      </div><!-- End Header -->
+     
+    <!-- Page Content
+    ================================================== --> 
+    
+    <!-- Title Header -->
+    <div class="row">
+        <div class="span12">
+            <h2>Examples of CSS Elements and jQuery Components</h2>
+            <p class="lead">Piccolo is a minimal style theme built using Bootstrap. Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. Below are some examples of CSS and typography elements available within Piccolo. For more on Bootstrap, check out <a href="http://twitter.github.com/bootstrap/index.html" target="_blank">the official site</a>.</p>
+        </div> 
+        <div class="span4">
+            <h5>3 Column Layout</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+        </div>
+        <div class="span4">
+            <h5>3 Column Layout</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+        </div>
+        <div class="span4">
+            <h5>3 Column Layout</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+        </div>
+        <div class="span3">
+            <h5>4 Column Layout</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+        </div>
+        <div class="span3">
+            <h5>4 Column Layout</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+        </div>
+        <div class="span3">
+            <h5>4 Column Layout</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+        </div>
+        <div class="span3">
+            <h5>4 Column Layout</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+        </div>
+    </div> 
+    
+    <!-- Grid Example
+    ================================================== --> 
+    <div class="row">
+        <div class="span12"><h6 class="title-bg">12 Column:<small> Responsive Grid Layout</small></h6>
+        The responsive Bootstrap grid system utilizes 12 columns. The grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</div>
+    </div>
+    
+    <div class="row the-grid">
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+    </div>
+    <div class="row the-grid">
+        <div class="span4">4</div>
+        <div class="span4">4</div>
+        <div class="span4">4</div>
+    </div>
+    <div class="row the-grid">
+        <div class="span4">4</div>
+        <div class="span8">8</div>
+        </div>
+    <div class="row the-grid">
+        <div class="span6">6</div>
+        <div class="span6">6</div>
+    </div>
+    <div class="row the-grid">
+        <div class="span12">12</div>
+    </div>
+   
+    <!-- Typography
+    ================================================== --> 
+    <div class="row no-margin">
+        <div class="span6"><h6 class="title-bg">Typography: <small>Headings and Dividers</small></h6></div>
+        <div class="span6"><h6 class="title-bg">Lead Copy: <small>Start a page in style</small></h6></div>
+    </div>
+
+    <div class="row">
+         <div class="span3">
+            <h1 class="title-bg">h1. Heading 1</h1>
+            <h2 class="title-bg">h2. Heading 2</h2>
+            <h3 class="title-bg">h3. Heading 3</h3>
+            <h4 class="title-bg">h4. Heading 4</h4>
+            <h5 class="title-bg">h5. Heading 5</h5>
+            <h6 class="title-bg">h6. Heading 6</h6>
+        </div>
+        <div class="span3">
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2</h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+        </div>
+
+        <div class="span6">
+            <p class="lead">
+                Lead body copy. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus. Cras rutrum, massa non blandit convallis, est lacus gravida enim, eu fermentum ligula orci et tortor. In sit amet nisl ac leo pulvinar molestie. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie.
+            </p>
+            <p>
+                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus. Cras rutrum, massa non blandit convallis, est lacus gravida enim, eu fermentum ligula orci et tortor. In sit amet nisl ac leo pulvinar molestie. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.
+            </p>
+
+            <p class="well">In sit amet nisl ac leo pulvinar molestie. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.</p>
+
+            <p><button class="btn btn-inverse" type="button">Read more</button></p>
+        </div>
+    </div>
+
+
+<!-- Carousel
+================================================== -->
+    <div class="row">
+        <div class="span6">
+            <h6 class="title-bg">Carousel: <small>Add a Slideshow to Any Page</small></h6>
+            <div class="flexslider">
+              <ul class="slides">
+                <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li>
+              </ul>
+            </div>
+        </div>
+
+<!-- Thumbnail Grid
+================================================== -->
+        <div class="span6">
+            <h6 class="title-bg">Thumbnails: <small>Easily create a grid of thumbnails</small></h6>
+
+            <ul class="thumbnails">
+                <li class="span3"><img src="img/gallery/thumbnail-270x300.jpg" alt="Thumbnail" class="thumbnail" /></li>
+                <li class="span3"><img src="img/gallery/thumbnail-270x130.jpg" alt="Thumbnail" class="thumbnail" /></li>
+                <li class="span3"><img src="img/gallery/thumbnail-270x130.jpg" alt="Thumbnail" class="thumbnail" /></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+<!-- Accordian (Collapse)
+================================================== --> 
+    <div class="row">
+        <div class="span6">
+            <h6 class="title-bg">Accordian: <small>Allows for Collapsed Content</small></h6>
+
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                        Collapsible Group Item #1
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                        Collapsible Group Item #2
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                        Collapsible Group Item #3
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    <!-- Tabs
+    ================================================== --> 
+        <div class="span6">
+            <h6 class="title-bg">Tabs: <small>Allows for Tabbed Content</small></h6>
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+                    </div>
+                    <div class="tab-pane" id="profile">
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+                    </div>
+                    <div class="tab-pane" id="messages">
+                        Enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                    </div>
+                    <div class="tab-pane" id="settings">
+                        Cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+    <!-- Modal
+    ================================================== --> 
+    <div class="row">
+        <div class="span4">
+            <h6 class="title-bg">Modal: <small>Click below for an example</small></h6>
+            <div class="well">
+                <a href="#myModal" role="button" class="btn btn-inverse" data-toggle="modal">Example Modal Window</a>
+            </div>
+        </div>
+
+    <!-- Modal -->
+    <div class="modal hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h5 id="myModalLabel">Modal header</h5>
+        </div>
+        <div class="modal-body">
+            <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-inverse">Save changes</button>
+        </div>
+    </div>
+
+    <!-- Tooltip
+    ================================================== --> 
+     <div class="span4">
+            <h6 class="title-bg">Tooltip: <small>Hover below for an example</small></h6>
+            <div class="well">
+                Tight pants next level <a href="#" rel="tooltip" title="default tooltip">keffiyeh</a> you probably haven't heard of them. Photo booth beard raw denim letterpress.
+            </div>
+        </div>
+
+
+    <!-- Popover
+    ================================================== --> 
+        <div class="span4">
+            <h6 class="title-bg">Popover: <small>Hover below for an example</small></h6>
+            <div class="well">
+                <a href="#" class="btn btn btn-inverse" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?" data-animation="true">Hover to Toggle Popover</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Form Elements
+    ================================================== --> 
+    <div class="row form-examples">
+
+        <div class="span12">
+            <h6 class="title-bg">Form Elements: <small>Extending form controls</small></h6>
+        </div>
+
+        <div class="span4">
+            <div class="input-prepend">
+                <span class="add-on">@</span><input class="span2" id="prependedInput" size="16" type="text" placeholder="Username">
+            </div>
+            <div class="input-prepend input-append">
+                <span class="add-on">$</span><input class="span2" id="appendedPrependedInput" size="16" type="text"><span class="add-on">.00</span>
+            </div>
+        </div>
+
+        <div class="span4">
+            <div class="input-append">
+                <input class="span2" id="appendedInputButton" size="16" type="text"><button class="btn" type="button">Go!</button>
+            </div>
+             
+            <div class="input-append">
+                <input class="span2" id="appendedInputButtons" size="16" type="text"><button class="btn" type="button">Search</button><button class="btn" type="button">Options</button>
+            </div>
+        </div>
+
+        <div class="span4">
+            <form class="form-search">
+            <div class="input-append">
+                <input type="text" class="span2 search-query">
+                <button type="submit" class="btn">Search</button>
+            </div>
+            <div class="input-prepend">
+                <button type="submit" class="btn">Search</button>
+                <input type="text" class="span2 search-query">
+            </div>
+            </form>
+        </div>
+          
+    </div>
+
+    <!-- Buttons
+    ================================================== --> 
+    <div class="row">
+        <div class="span4">
+            <h6 class="title-bg">Buttons: <small>Small, Medium and Large</small></h6>
+            <h6>Large Button</h6>
+            <p><button class="btn btn-large" type="button">Default</button>
+            <button class="btn btn-large btn-warning" type="button">Info</button>
+            <button class="btn btn-large btn-inverse" type="button">Inverse</button></p>
+
+            <h6>Default Button</h6>
+            <p><button class="btn" type="button">Default</button>
+            <button class="btn btn-warning" type="button">Info</button>
+            <button class="btn btn-inverse" type="button">Inverse</button></p>
+
+            <h6>Small Button</h6>
+            <p><button class="btn btn-small" type="button">Default</button>
+            <button class="btn btn-small btn-warning" type="button">Info</button>
+            <button class="btn btn-small btn-inverse" type="button">Inverse</button></p>
+
+            <h6>Mini Button</h6>
+            <p><button class="btn btn-mini" type="button">Default</button>
+            <button class="btn btn-mini btn-warning" type="button">Info</button>
+            <button class="btn btn-mini btn-inverse" type="button">Inverse</button></p>
+        </div>
+
+        <!-- Alerts
+        ================================================== --> 
+        <div class="span4">
+            <h6 class="title-bg">Alerts: <small>Provide user feedback</small></h6>      
+            <div class="alert alert-error">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Oh snap!</strong> Change a few things and try again. 
+            </div>
+            <div class="alert alert-block">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Warning!</strong> Best check yo self, you're not...
+            </div>
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Well done!</strong> You successfully read this alert message. 
+            </div>
+            <div class="alert alert-info">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Heads up!</strong> This alert is not super important. 
+            </div>  
+        </div>
+
+        <!-- Progress Bars
+        ================================================== --> 
+        <div class="span4">
+            <h6 class="title-bg">Progress Bars: <small>Keep track</small></h6> 
+            <div class="progress progress-info progress-striped">
+                <div class="bar" style="width: 20%"></div>
+            </div>
+            <div class="progress progress-success progress-striped">
+                <div class="bar" style="width: 40%"></div>
+            </div>
+            <div class="progress progress-warning progress-striped">
+                <div class="bar" style="width: 60%"></div>
+            </div>
+            <div class="progress progress-danger progress-striped">
+                <div class="bar" style="width: 80%"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Icons
+    ================================================== --> 
+    <div class="row">
+        <div class="span12"><h6 class="title-bg">Icons: <small>provided by Glyphicons</small></h6></div>
+        <div class="span12">
+            <ul class="the-icons">
+                <li><i class="icon-glass"></i> icon-glass</li>
+                <li><i class="icon-music"></i> icon-music</li>
+                <li><i class="icon-search"></i> icon-search</li>
+                <li><i class="icon-envelope"></i> icon-envelope</li>
+                <li><i class="icon-heart"></i> icon-heart</li>
+                <li><i class="icon-star"></i> icon-star</li>
+                <li><i class="icon-star-empty"></i> icon-star-empty</li>
+                <li><i class="icon-user"></i> icon-user</li>
+                <li><i class="icon-film"></i> icon-film</li>
+                <li><i class="icon-th-large"></i> icon-th-large</li>
+                <li><i class="icon-th"></i> icon-th</li>
+                <li><i class="icon-th-list"></i> icon-th-list</li>
+                <li><i class="icon-ok"></i> icon-ok</li>
+                <li><i class="icon-remove"></i> icon-remove</li>
+                <li><i class="icon-zoom-in"></i> icon-zoom-in</li>
+                <li><i class="icon-zoom-out"></i> icon-zoom-out</li>
+                <li><i class="icon-off"></i> icon-off</li>
+                <li><i class="icon-signal"></i> icon-signal</li>
+                <li><i class="icon-cog"></i> icon-cog</li>
+                <li><i class="icon-trash"></i> icon-trash</li>
+                <li><i class="icon-home"></i> icon-home</li>
+                <li><i class="icon-file"></i> icon-file</li>
+                <li><i class="icon-time"></i> icon-time</li>
+                <li><i class="icon-road"></i> icon-road</li>
+                <li><i class="icon-download-alt"></i> icon-download-alt</li>
+                <li><i class="icon-download"></i> icon-download</li>
+                <li><i class="icon-upload"></i> icon-upload</li>
+                <li><i class="icon-inbox"></i> icon-inbox</li>
+       
+                <li><i class="icon-play-circle"></i> icon-play-circle</li>
+                <li><i class="icon-repeat"></i> icon-repeat</li>
+                <li><i class="icon-refresh"></i> icon-refresh</li>
+                <li><i class="icon-list-alt"></i> icon-list-alt</li>
+                <li><i class="icon-lock"></i> icon-lock</li>
+                <li><i class="icon-flag"></i> icon-flag</li>
+                <li><i class="icon-headphones"></i> icon-headphones</li>
+                <li><i class="icon-volume-off"></i> icon-volume-off</li>
+                <li><i class="icon-volume-down"></i> icon-volume-down</li>
+                <li><i class="icon-volume-up"></i> icon-volume-up</li>
+                <li><i class="icon-qrcode"></i> icon-qrcode</li>
+                <li><i class="icon-barcode"></i> icon-barcode</li>
+                <li><i class="icon-tag"></i> icon-tag</li>
+                <li><i class="icon-tags"></i> icon-tags</li>
+                <li><i class="icon-book"></i> icon-book</li>
+                <li><i class="icon-bookmark"></i> icon-bookmark</li>
+                <li><i class="icon-print"></i> icon-print</li>
+                <li><i class="icon-camera"></i> icon-camera</li>
+                <li><i class="icon-font"></i> icon-font</li>
+                <li><i class="icon-bold"></i> icon-bold</li>
+                <li><i class="icon-italic"></i> icon-italic</li>
+                <li><i class="icon-text-height"></i> icon-text-height</li>
+                <li><i class="icon-text-width"></i> icon-text-width</li>
+                <li><i class="icon-align-left"></i> icon-align-left</li>
+                <li><i class="icon-align-center"></i> icon-align-center</li>
+                <li><i class="icon-align-right"></i> icon-align-right</li>
+                <li><i class="icon-align-justify"></i> icon-align-justify</li>
+                <li><i class="icon-list"></i> icon-list</li>
+
+                <li><i class="icon-indent-left"></i> icon-indent-left</li>
+                <li><i class="icon-indent-right"></i> icon-indent-right</li>
+                <li><i class="icon-facetime-video"></i> icon-facetime-video</li>
+                <li><i class="icon-picture"></i> icon-picture</li>
+                <li><i class="icon-pencil"></i> icon-pencil</li>
+                <li><i class="icon-map-marker"></i> icon-map-marker</li>
+                <li><i class="icon-adjust"></i> icon-adjust</li>
+                <li><i class="icon-tint"></i> icon-tint</li>
+                <li><i class="icon-edit"></i> icon-edit</li>
+                <li><i class="icon-share"></i> icon-share</li>
+                <li><i class="icon-check"></i> icon-check</li>
+                <li><i class="icon-move"></i> icon-move</li>
+                <li><i class="icon-step-backward"></i> icon-step-backward</li>
+                <li><i class="icon-fast-backward"></i> icon-fast-backward</li>
+                <li><i class="icon-backward"></i> icon-backward</li>
+                <li><i class="icon-play"></i> icon-play</li>
+                <li><i class="icon-pause"></i> icon-pause</li>
+                <li><i class="icon-stop"></i> icon-stop</li>
+                <li><i class="icon-forward"></i> icon-forward</li>
+                <li><i class="icon-fast-forward"></i> icon-fast-forward</li>
+                <li><i class="icon-step-forward"></i> icon-step-forward</li>
+                <li><i class="icon-eject"></i> icon-eject</li>
+                <li><i class="icon-chevron-left"></i> icon-chevron-left</li>
+                <li><i class="icon-chevron-right"></i> icon-chevron-right</li>
+                <li><i class="icon-plus-sign"></i> icon-plus-sign</li>
+                <li><i class="icon-minus-sign"></i> icon-minus-sign</li>
+                <li><i class="icon-remove-sign"></i> icon-remove-sign</li>
+                <li><i class="icon-ok-sign"></i> icon-ok-sign</li>
+
+                <li><i class="icon-question-sign"></i> icon-question-sign</li>
+                <li><i class="icon-info-sign"></i> icon-info-sign</li>
+                <li><i class="icon-screenshot"></i> icon-screenshot</li>
+                <li><i class="icon-remove-circle"></i> icon-remove-circle</li>
+                <li><i class="icon-ok-circle"></i> icon-ok-circle</li>
+                <li><i class="icon-ban-circle"></i> icon-ban-circle</li>
+                <li><i class="icon-arrow-left"></i> icon-arrow-left</li>
+                <li><i class="icon-arrow-right"></i> icon-arrow-right</li>
+                <li><i class="icon-arrow-up"></i> icon-arrow-up</li>
+                <li><i class="icon-arrow-down"></i> icon-arrow-down</li>
+                <li><i class="icon-share-alt"></i> icon-share-alt</li>
+                <li><i class="icon-resize-full"></i> icon-resize-full</li>
+                <li><i class="icon-resize-small"></i> icon-resize-small</li>
+                <li><i class="icon-plus"></i> icon-plus</li>
+                <li><i class="icon-minus"></i> icon-minus</li>
+                <li><i class="icon-asterisk"></i> icon-asterisk</li>
+                <li><i class="icon-exclamation-sign"></i> icon-exclamation-sign</li>
+                <li><i class="icon-gift"></i> icon-gift</li>
+                <li><i class="icon-leaf"></i> icon-leaf</li>
+                <li><i class="icon-fire"></i> icon-fire</li>
+                <li><i class="icon-eye-open"></i> icon-eye-open</li>
+                <li><i class="icon-eye-close"></i> icon-eye-close</li>
+                <li><i class="icon-warning-sign"></i> icon-warning-sign</li>
+                <li><i class="icon-plane"></i> icon-plane</li>
+                <li><i class="icon-calendar"></i> icon-calendar</li>
+                <li><i class="icon-random"></i> icon-random</li>
+                <li><i class="icon-comment"></i> icon-comment</li>
+                <li><i class="icon-magnet"></i> icon-magnet</li>
+
+                <li><i class="icon-chevron-up"></i> icon-chevron-up</li>
+                <li><i class="icon-chevron-down"></i> icon-chevron-down</li>
+                <li><i class="icon-retweet"></i> icon-retweet</li>
+                <li><i class="icon-shopping-cart"></i> icon-shopping-cart</li>
+                <li><i class="icon-folder-close"></i> icon-folder-close</li>
+                <li><i class="icon-folder-open"></i> icon-folder-open</li>
+                <li><i class="icon-resize-vertical"></i> icon-resize-vertical</li>
+                <li><i class="icon-resize-horizontal"></i> icon-resize-horizontal</li>
+                <li><i class="icon-hdd"></i> icon-hdd</li>
+                <li><i class="icon-bullhorn"></i> icon-bullhorn</li>
+                <li><i class="icon-bell"></i> icon-bell</li>
+                <li><i class="icon-certificate"></i> icon-certificate</li>
+                <li><i class="icon-thumbs-up"></i> icon-thumbs-up</li>
+                <li><i class="icon-thumbs-down"></i> icon-thumbs-down</li>
+                <li><i class="icon-hand-right"></i> icon-hand-right</li>
+                <li><i class="icon-hand-left"></i> icon-hand-left</li>
+                <li><i class="icon-hand-up"></i> icon-hand-up</li>
+                <li><i class="icon-hand-down"></i> icon-hand-down</li>
+                <li><i class="icon-circle-arrow-right"></i> icon-circle-arrow-right</li>
+                <li><i class="icon-circle-arrow-left"></i> icon-circle-arrow-left</li>
+                <li><i class="icon-circle-arrow-up"></i> icon-circle-arrow-up</li>
+                <li><i class="icon-circle-arrow-down"></i> icon-circle-arrow-down</li>
+                <li><i class="icon-globe"></i> icon-globe</li>
+                <li><i class="icon-wrench"></i> icon-wrench</li>
+                <li><i class="icon-tasks"></i> icon-tasks</li>
+                <li><i class="icon-filter"></i> icon-filter</li>
+                <li><i class="icon-briefcase"></i> icon-briefcase</li>
+                <li><i class="icon-fullscreen"></i> icon-fullscreen</li>
+            </ul>
+        </div>
+    </div>
+    
+    </div> <!-- End Container -->
+
+    <!-- Footer Area
+        ================================================== -->
+
+	<div class="footer-container"><!-- Begin Footer -->
+    	<div class="container">
+        	<div class="row footer-row">
+                <div class="span3 footer-col">
+                    <h5>About Us</h5>
+                   <img src="img/piccolo-footer-logo.png" alt="Piccolo" /><br /><br />
+                    <address>
+                        <strong>Design Team</strong><br />
+                        123 Main St, Suite 500<br />
+                        New York, NY 12345<br />
+                    </address>
+                    <ul class="social-icons">
+                        <li><a href="#" class="social-icon facebook"></a></li>
+                        <li><a href="#" class="social-icon twitter"></a></li>
+                        <li><a href="#" class="social-icon dribble"></a></li>
+                        <li><a href="#" class="social-icon rss"></a></li>
+                        <li><a href="#" class="social-icon forrst"></a></li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Latest Tweets</h5>
+                    <ul>
+                        <li><a href="#">@room122</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><a href="#">@room122</a> In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.</li>
+                        <li><a href="#">@room122</a> Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.</li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Latest Posts</h5>
+                     <ul class="post-list">
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Consectetur adipiscing elit est lacus gravida</a></li>
+                        <li><a href="#">Lectus sed orci molestie molestie etiam</a></li>
+                        <li><a href="#">Mattis consectetur adipiscing elit est lacus</a></li>
+                        <li><a href="#">Cras rutrum, massa non blandit convallis est</a></li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Flickr Photos</h5>
+                    <ul class="img-feed">
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                        <div class="span6">
+                            <span class="right">
+                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer -->
+
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+    
+</body>
+</html>
